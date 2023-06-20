@@ -1,0 +1,39 @@
+food module
+***********
+
+Moduł zawierający klasę jedzenia „Food”.
+
+class Food(pos: Vector2 = None)
+
+   Klasy bazowe: "object"
+
+   Klasa jedzenia.
+
+   pos
+
+      Pozycja jedzenia na mapie.
+
+      Type:
+         Vector2
+
+   color
+
+      Kolor jedzenia.
+
+      Type:
+         Color
+
+   spawn_timer
+
+      Czas pozostały do pojawienia się jedzenia.
+
+      Type:
+         float
+
+   update(dt: float)
+
+      Odświeżanie koloru jedzenia.
+
+      Parametry:
+         **dt** – Mnożnik zmieniający wartości względem wydajności
+         gry.

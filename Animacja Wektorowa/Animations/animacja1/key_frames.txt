@@ -1,0 +1,8 @@
+frame0:0
+frame1:100
+frame2:200
+frame3:300
+frame4:400
+frame5:500
+frame6:600
+frame7:700

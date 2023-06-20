@@ -1,0 +1,4 @@
+punkt3:punkt1 * color = (255, 255, 255, 255); fill = False; aa = False; bezier = 0
+punkt1:punkt0 * color = (255, 255, 255, 255); fill = False; aa = False; bezier = 0
+punkt0:punkt2 * color = (255, 255, 255, 255); fill = False; aa = False; bezier = 0
+punkt2:punkt3 * color = (255, 255, 255, 255); fill = False; aa = False; bezier = 0

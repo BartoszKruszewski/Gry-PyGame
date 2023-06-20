@@ -1,0 +1,75 @@
+snake module
+************
+
+Moduł zawierający abstrakcyjną klasę węża „Snake”, z której dziedziczą
+klasy gracza „Player” oraz przeciwnika „Enemy”.
+
+class Snake
+
+   Klasy bazowe: "object"
+
+   Abstrakcyjna klasa węża.
+
+   Zmiana pozycji, wielkości i koloru węża.
+
+   eaten_food
+
+      Ilość zjedzonego jedzenia do tej pory.
+
+      Type:
+         int
+
+   body_size
+
+      Promień pojedynczej „komórki” ciała.
+
+      Type:
+         float
+
+   dest
+
+      Pozycja, w kierunku której porusza się wąż.
+
+      Type:
+         Vector2
+
+   speed
+
+      Prędkość węża.
+
+      Type:
+         float
+
+   is_speeding
+
+      Stan przyśpieszania gracza.
+
+      Type:
+         bool
+
+   spawn_timer
+
+      Licznik czasu, jaki pozostał do pojawienia się węża
+
+      Type:
+         float
+
+   color
+
+      Kolor węża
+
+      Type:
+         Color
+
+   grow()
+
+      Zwiększenie ilości zjedzonego jedzenia i aktualizacja wielkości
+      węża.
+
+   update_snake(dt: float)
+
+      Aktualizacja węża.
+
+      Parametry:
+         **dt** – Mnożnik zmieniający wartości względem wydajności
+         gry.

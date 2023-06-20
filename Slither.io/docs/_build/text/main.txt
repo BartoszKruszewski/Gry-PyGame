@@ -1,0 +1,193 @@
+main module
+***********
+
+Główny moduł gry. Wywołuje pozostałe wszystkie moduły projektu.
+Uruchomienie tego modułu skutkuje uruchomieniem gry.
+
+class Main
+
+   Klasy bazowe: "object"
+
+   Główna klasa programu. Odpowiada za przygotowanie elementów gry,
+   obsługę głównej pętli gry oraz rysowanie.
+
+   screen
+
+      Płaszczyzna ekranu.
+
+      Type:
+         Surface
+
+   draw_screen
+
+      Płaszczyzna do rysowania.
+
+      Type:
+         Surface
+
+   draw_screen_size
+
+      Wymiary płaszczyzny do rysowania.
+
+      Type:
+         Vector2
+
+   clock
+
+      Zegar gry.
+
+      Type:
+         Clock
+
+   dt
+
+      Mnożnik zmieniający wartości względem wydajności gry.
+
+      Type:
+         float
+
+   mouse
+
+      Obiekt myszki.
+
+      Type:
+         Mouse
+
+   is_running
+
+      Zmienna kontrolująca, czy gra ma być uruchomiona.
+
+      Type:
+         bool
+
+   scroll
+
+      Przesunięcie obszaru rysowania gry.
+
+      Type:
+         Vector2
+
+   particles
+
+      Lista obiektów cząsteczek.
+
+      Type:
+         list[Particle]
+
+   player
+
+      Obiekt węża gracza.
+
+      Type:
+         Player
+
+   enemies
+
+      Lista obiektów przeciwników.
+
+      Type:
+         list[Enemies]
+
+   food
+
+      Lista obiektów jedzenia.
+
+      Type:
+         list[Food]
+
+   add_food()
+
+      Dodanie nowego obiektu jedzenia, po wcześniejszym znalezieniu
+      wolnej pozycji.
+
+   static check_snake_collisions(snake: Snake, other_snakes: list[snake.Snake]) -> bool
+
+      Funkcja sprawdzająca kolizje podanego węża z innymi wężami.
+
+      Parametry:
+         * **snake** – Wąż, którego kolizje są sprawdzane.
+
+         * **other_snakes** – Lista pozostałych węży.
+
+      Zwraca:
+         Prawda, jeżeli wystąpiła kolizja, fałsz w przeciwnym
+         przypadku.
+
+   display_update()
+
+      Odświeżanie ekranu.
+
+   draw()
+
+      Rysowanie wszystkich elementów gry.
+
+   draw_circle(pos: Vector2, r: float, c: Color, **kwargs)
+
+      Rysowanie koła.
+
+      Parametry:
+         * **pos** – Pozycja środka koła.
+
+         * **r** – Promień koła.
+
+         * **c** – Kolor koła.
+
+         * ****kwargs** – Dodatkowe argumenty rysowania.
+
+   draw_eye(pos: Vector2, size: float, transparency)
+
+      Rysowanie oka węża.
+
+      Parametry:
+         * **pos** – Pozycja, na której ma zostać narysowane oko.
+
+         * **size** – Wielkość oka.
+
+         * **transparency** (*int*) – Przeźroczystość oka.
+
+   draw_snake(snake: Snake)
+
+      Rysowanie węża.
+
+      Parametry:
+         **snake** – Obiekt węża do narysowania.
+
+   events_update()
+
+      Sprawdzanie, czy wywołano zdarzenie z modułu pygame i wykonanie
+      powiązanych z nim poleceń.
+
+   game()
+
+      Główna logika gry
+
+   is_in_screen_range(vector: Vector2, shift: float = 0) -> bool
+
+      Sprawdzanie, czy okrąg o podanej pozycji środka i promieniu
+      znajduje się w zasięgu rysowania.
+
+      Parametry:
+         * **vector** – Środek okręgu.
+
+         * **shift** – Promień okręgu.
+
+      Zwraca:
+         Prawda, jeżeli okrąg jest w zasięgu rysowania, fałsz w
+         przeciwnym przypadku.
+
+   static rotate_point(v1: Vector2, v2: Vector2, angle: float)
+
+      Funkcja zwracająca punkt wektor będący wektorem v1 obróconym o
+      podany kąt wokół wektora v2.
+
+      Parametry:
+         * **v1** – Wektor, który będzie obracany.
+
+         * **v2** – Wektor, wokół którego wektor v1 będzie obracany.
+
+         * **angle** – Kąt, o jaki wektor v1 będzie obracany wokół
+           wektora v2.
+
+      Zwraca:
+         Wektor, będący wektorem v1 obróconym o kąt angle, wokół
+         wektora v2.

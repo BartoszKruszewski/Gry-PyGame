@@ -1,0 +1,18 @@
+slitherio
+*********
+
+* CONST module
+
+* enemy module
+
+* food module
+
+* main module
+
+* mouse module
+
+* particle module
+
+* player module
+
+* snake module

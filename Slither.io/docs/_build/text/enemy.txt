@@ -1,0 +1,33 @@
+enemy module
+************
+
+Moduł zawierający klasę węża przeciwnika „Enemy”, która dziedziczy po
+klasie abstrakcyjnej węża „Snake”.
+
+class Enemy
+
+   Klasy bazowe: "Snake"
+
+   Klasa węża przeciwnika, dziedzicząca z klasy Snake.
+
+   Ustawianie celu poruszania się węże, na podstawie położenia innych
+   węży i jedzenia.
+
+   __ai_update_timer
+
+      Licznik czasu odświeżenia AI.
+
+      Type:
+         float
+
+   update(food_list: list[food.Food], enemies_list: list[snake.Snake], dt: float)
+
+      Odświeżanie AI i wybieranie pozycji celu poruszania się węża.
+
+      Parametry:
+         * **food_list** – Lista obiektów jedzenia.
+
+         * **enemies_list** – Lista obiektów węży.
+
+         * **dt** – Mnożnik zmieniający wartości względem wydajności
+           gry.

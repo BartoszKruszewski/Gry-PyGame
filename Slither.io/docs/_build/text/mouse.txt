@@ -1,0 +1,32 @@
+mouse module
+************
+
+Moduł zawierający klasę obsługującą mysz „Mouse”.
+
+class Mouse
+
+   Klasy bazowe: "object"
+
+   Klasa obsługująca myszkę.
+
+   clicked
+
+      Zmienna mówiąca, czy lewy przycisk myszy jest wciśnięty.
+
+      Type:
+         bool
+
+   pos
+
+      Pozycja kursora myszy.
+
+      Type:
+         Vector2
+
+   update(draw_screen_size: Vector2)
+
+      Odświeżania pozycji myszy i informacji o wciśnięciu przycisku.
+
+      Parametry:
+         **draw_screen_size** – Aktualna wielkość płaszczyzny do
+         rysowania.

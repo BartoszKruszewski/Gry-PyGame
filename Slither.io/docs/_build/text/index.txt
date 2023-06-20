@@ -1,0 +1,34 @@
+Welcome to Slither.io’s documentation!
+**************************************
+
+
+Contents:
+^^^^^^^^^
+
+* slitherio
+
+  * CONST module
+
+  * enemy module
+
+  * food module
+
+  * main module
+
+  * mouse module
+
+  * particle module
+
+  * player module
+
+  * snake module
+
+
+Indices and tables
+******************
+
+* Indeks
+
+* Indeks modułów
+
+* Wyszukiwanie

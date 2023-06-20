@@ -1,0 +1,25 @@
+player module
+*************
+
+Moduł zawierający klasę węża gracza „Player”, która dziedziczy po
+klasie abstrakcyjnej węża „Snake”.
+
+class Player
+
+   Klasy bazowe: "Snake"
+
+   Klasa węża gracza, dziedzicząca z klasy Snake.
+
+   Ustawianie celu poruszania się węże, na podstawie wskaźnika myszki.
+
+   update(mouse: Mouse, dt: float, scroll: Vector2)
+
+      Ustawienie kierunku poruszania na pozycję wskaźnika myszki
+
+      Parametry:
+         * **mouse** – Obiekt myszki
+
+         * **dt** – Mnożnik zmieniający wartości względem wydajności
+           gry.
+
+         * **scroll** – Przesunięcie płaszczyzny do rysowania.

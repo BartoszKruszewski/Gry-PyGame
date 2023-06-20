@@ -1,0 +1,54 @@
+particle module
+***************
+
+Moduł zawierający klasę cząsteczki „Particle”, wykorzystywaną podczas
+tworzenia efektów cząsteczkowych.
+
+class Particle(pos: Vector2)
+
+   Klasy bazowe: "object"
+
+   Klasa cząsteczki, służących do wyświetlania efektów cząsteczkowych.
+
+   pos
+
+      Pozycja cząsteczki.
+
+      Type:
+         Vector2
+
+   color
+
+      Kolor cząsteczki.
+
+      Type:
+         Color
+
+   size
+
+      Wielkość cząsteczki.
+
+      Type:
+         int
+
+   timer
+
+      Czas pozostały do zniknięcia cząsteczki.
+
+      Type:
+         float
+
+   direction
+
+      Kierunek poruszania się cząsteczki.
+
+      Type:
+         Vector2
+
+   update(dt: float)
+
+      Odświeżanie pozycji i przezroczystości koloru cząsteczki.
+
+      Parametry:
+         **dt** – Mnożnik zmieniający wartości względem wydajności
+         gry.
