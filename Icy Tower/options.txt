@@ -1,0 +1,5 @@
+resolution fullscreen
+difficulty easy
+particles lots
+volume 0.4895833333333333
+combo_caption on
